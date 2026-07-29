@@ -17,8 +17,9 @@
 
 ### 演示视频
 
-- [手机 APP 测温效果](https://github.com/rhytabc/TempMonitor/raw/main/docs/app_demo.mp4)
-- [最小系统板调试检测](https://github.com/rhytabc/TempMonitor/raw/main/docs/debug_test.mp4)
+<video src="https://github.com/rhytabc/TempMonitor/raw/main/docs/app_demo.mp4" controls width="360"></video>
+
+<video src="https://github.com/rhytabc/TempMonitor/raw/main/docs/debug_test.mp4" controls width="360"></video>
 
 ---
 
