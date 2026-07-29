@@ -1,0 +1,24 @@
+# Keil
+firmware/Project/Objects/
+firmware/Project/Listings/
+firmware/Project/RTE/
+firmware/Project/DebugConfig/
+*.uvguix.*
+*.uvoptx
+*.dep
+
+# Python
+app/__pycache__/
+
+# Android
+android_app/.gradle/
+android_app/build/
+android_app/app/build/
+android_app/local.properties
+*.iml
+.idea/
+
+# ESP32 build artifacts
+esp32_receiver/test_minimal/
+esp32_receiver/test_rf24/
+esp32_receiver/final/
