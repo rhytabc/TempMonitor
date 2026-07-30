@@ -22,3 +22,8 @@ android_app/local.properties
 esp32_receiver/test_minimal/
 esp32_receiver/test_rf24/
 esp32_receiver/final/
+esp32_receiver/nrf_test/
+
+# STM32 test files
+firmware/User/main_nrf_test.c
+firmware/User/nrf_test_txrx.h
