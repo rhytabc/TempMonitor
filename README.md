@@ -146,9 +146,9 @@ TempMonitor/
 
 [▶ 点击查看视频](docs/app_demo.mp4)
 
-**最小系统板调试检测**
+**串口数据验证**
 
-[▶ 点击查看视频](docs/debug_test.mp4)
+[▶ 点击查看视频](docs/serial_test.mp4)
 
 ### 📱 APP 安装包
 
