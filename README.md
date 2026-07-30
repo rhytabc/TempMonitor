@@ -150,6 +150,10 @@ TempMonitor/
 
 [▶ 点击查看视频](docs/debug_test.mp4)
 
+### 📱 APP 安装包
+
+[📥 下载 TempMonitor APK](TempMonitor.apk)
+
 ---
 
 ## 🔌 API 参考
