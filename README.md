@@ -28,9 +28,34 @@ Real-time embedded temperature monitoring system based on STM32F103C8T6 + ESP32 
 | PA2 (USART2_TX) | ESP32 GPIO16 |
 | GND | ESP32 GND |
 
+### Features
+
+- DS18B20 waterproof probe, 12-bit ±0.5°C
+- Dual-chip: STM32 handles sensor, ESP32 handles WiFi + HTTP
+- No router needed — ESP32 creates WiFi AP `TempMonitor`
+- Android APP with live temperature, charts, MAX/MIN, °C/°F modes
+- RESTful API for integration
+- Bit-banged OneWire driver from scratch
+- Cooperative polling scheduler — no RTOS overhead
+
+### Architecture
+
+```
+DS18B21 ──OneWire──► STM32F103C8T6 ──USART2──► ESP32 ──WiFi──► Phone
+ PB12, 4.7kΩ           72MHz                    Arduino       APP
+```
+
 ### API
 
 `GET http://192.168.4.1/temp` → `{"temperature": 26.3}`
+
+### NRF24L01 (Experimental)
+
+The system was originally designed for full wireless via NRF24L01 (STM32→NRF→ESP32). The TX side works; ESP32 RX has SPI stability issues. Driver code preserved in `firmware/User/nrf24l01.c`.
+
+### License
+
+MIT
 
 ---
 
