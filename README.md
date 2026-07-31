@@ -155,7 +155,8 @@ https://github.com/user-attachments/assets/b8847c31-b938-4550-b6e1-fd2c8bbba974
 
 ### 📱 APP 安装包
 
-[📥 下载 TempMonitor APK](TempMonitor.apk)
+[📥 下载 TempMonitor APK](https://github.com/rhytabc/TempMonitor/raw/main/TempMonitor.apk)
+
 
 ---
 
