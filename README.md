@@ -144,11 +144,14 @@ TempMonitor/
 
 **手机 APP 测温效果展示**
 
-[▶ 点击查看视频](docs/app_demo.mp4)
+https://github.com/user-attachments/assets/4573bcce-5288-4162-bd92-70b9003007e6
+
+
 
 **串口数据验证**
 
-[▶ 点击查看视频](docs/serial_test.mp4)
+https://github.com/user-attachments/assets/b8847c31-b938-4550-b6e1-fd2c8bbba974
+
 
 ### 📱 APP 安装包
 
