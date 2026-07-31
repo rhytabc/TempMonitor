@@ -1,9 +1,41 @@
 # TempMonitor — DS18B20 无线温度监控系统
 
+[English](#english) | [中文](#chinese)
+
 [![Platform](https://img.shields.io/badge/Platform-STM32F103-blue)]()
 [![WiFi](https://img.shields.io/badge/WiFi-ESP32-orange)]()
 [![Sensor](https://img.shields.io/badge/Sensor-DS18B20-green)]()
 [![License](https://img.shields.io/badge/License-MIT-lightgrey)]()
+
+---
+
+<a name="english"></a>
+## 🇬🇧 English
+
+Real-time embedded temperature monitoring system based on STM32F103C8T6 + ESP32 + DS18B20 waterproof probe. STM32 reads the sensor, ESP32 creates a WiFi hotspot, and the Android APP displays live temperature — no router needed.
+
+### Quick Start
+
+1. **STM32**: Open `firmware/Project/TempMonitor.uvprojx` in Keil MDK → F7 Build → F8 Flash
+2. **ESP32**: Open `esp32_receiver/esp32_receiver.ino` in Arduino IDE → Upload
+3. **Phone**: Connect WiFi `TempMonitor` (password `12345678`) → Install `TempMonitor.apk` → Open APP
+
+### Hardware Wiring
+
+| STM32 | Connect |
+|-------|---------|
+| PB12 | DS18B20 DQ (4.7kΩ pull-up to 3.3V) |
+| PA2 (USART2_TX) | ESP32 GPIO16 |
+| GND | ESP32 GND |
+
+### API
+
+`GET http://192.168.4.1/temp` → `{"temperature": 26.3}`
+
+---
+
+<a name="chinese"></a>
+## 🇨🇳 中文
 
 基于 STM32F103C8T6 + ESP32 + DS18B20 防水探头的嵌入式实时温度监控系统。STM32 采集温度，ESP32 自建 WiFi 热点，手机 APP 直连查看。
 
